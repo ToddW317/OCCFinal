@@ -26,6 +26,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+  background-image: url("Slide1/EMPTYBG.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 ol, ul {
 	list-style: none;
@@ -266,10 +269,10 @@ table {
 @media only screen and (min-width: 0rem) {
     :root {
       /* remove this whole :root and put in your global css file that's shared on all pages, then just remove this section from all other Stitches you add later, only need this once in your global stylesheet */
-      --primary: #9B6200;
-      --primaryLight: #FF9900;
+      --primary: #ADADC3;
+      --primaryLight: #70707A;
       --secondary: #007CFB;
-      --secondaryLight: #FFBA43;
+      --secondaryLight: #70707A;
       --headerColor: #1a1a1a;
       --bodyTextColor: #4E4B66;
       --bodyTextColorWhite: #FAFBFC;
@@ -280,9 +283,6 @@ table {
       --bodyFontSize: 1rem;
       /* 60px - 100px top and bottom */
       --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
-    }
-    body {
-      background-color: black;
     }
     #hero-358 {
       /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
@@ -412,7 +412,7 @@ table {
       margin: 0 auto clamp(2rem, 4vw, 2.5rem);
       /* 24px - 40px */
       margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
-      color: var(--bodyTextColor);
+      color: white;
     }
     #hero-358 .cs-button-group {
       width: 100%;
@@ -566,7 +566,7 @@ table {
       width: 19.5em;
       height: 19.5em;
       border-radius: 50%;
-      background-color: #000;
+      background-color: #70707A;
       position: absolute;
       left: 8.125em;
       bottom: 3.8125em;
@@ -620,7 +620,9 @@ table {
   /* Mobile - 280px */
   @media only screen and (min-width: 15rem) {
     body {
-      background-color: black;
+      background-image: url("Slide1/EMPTYBG.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     #hero-358 .cs-person {
       height: 100%;
@@ -644,7 +646,7 @@ table {
       width: 19.5em;
       height: 19.5em;
       border-radius: 50%;
-      background-color: #000;
+      background-color: #70707A;
       position: absolute;
       left: 8.125em;
       bottom: 3.8125em;
@@ -723,7 +725,7 @@ table {
       width: 19.5em;
       height: 19.5em;
       border-radius: 50%;
-      background-color: #000;
+      background-color: #70707A;
       position: absolute;
       left: 8.125em;
       bottom: 3.8125em;
@@ -827,7 +829,7 @@ table {
       width: 12.25em;
       height: 12.25em;
       border-radius: 50%;
-      background-color: #000;
+      background-color: #70707A;
       position: absolute;
       left: 8.125em;
       bottom: 11.8125em;
@@ -1048,7 +1050,7 @@ table {
     width: 100%;
     max-width: 40.625rem;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: white;
   }
   #sbs-1278 .cs-title {
     max-width: 20ch;
@@ -1149,6 +1151,9 @@ table {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  #sbs-1278 .cs-flex {
+    width: 100%;
   }
 }
 /* Tablet - 768px */
@@ -1280,21 +1285,21 @@ table {
     box-sizing: border-box;
   }
   #why-choose-892 .cs-person {
-    height: 100%;
+    height: 150%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   #why-choose-892 .cs-person img {
-    width: 100%;
+    width: 150%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   #why-choose-892 .cs-flex-group.cs-person.BCI-text {
-    width: 125%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -1328,10 +1333,9 @@ table {
     width: 100%;
     max-width: 40.625rem;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: white;
   }
   #why-choose-892 .cs-text {
-    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
     max-width: 62.5rem;
   }
   #why-choose-892 .cs-button-solid {
@@ -1384,7 +1388,7 @@ table {
     list-style: none;
     /* 20px - 32px */
     padding: clamp(1.25rem, 2.3vw, 2rem);
-    background-color: var(--headerColor);
+    background-color: #70707A;
     border-radius: 1rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -1546,11 +1550,18 @@ table {
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
+  #why-choose-892 #floating {
+    position: absolute;
+    max-height: 5rem;
+    top: 100%;
+    left: -10%;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #why-choose-892 .cs-container {
     max-width: 80rem;
+    position: relative;
   }
   #why-choose-892 .cs-item {
     grid-column: span 2;
@@ -1566,7 +1577,251 @@ table {
     position: aboslute;
     left: -50%;
   }
+  #why-choose-892 .cs-person img {
+    width: 150%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #why-choose-892 #floating {
+    position: absolute;
+    max-height: 5rem;
+    top: 100%;
+    left: 20%;
+  }
 }
+
+/*<!-- ============================================ -->
+<!--             Logistics/Sourcing               -->
+<!-- ============================================ -->*/
+
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose-682 {
+    /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
+    font-family: 'Roboto', 'Arial', sans-serif;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  #why-choose-682 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+  }
+  #why-choose-682 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 33.875rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #why-choose-682 .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #why-choose-682 .cs-topper img {
+    width: 150%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #why-choose-682 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #why-choose-682 .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: white;
+  }
+  #why-choose-682 .cs-color {
+    color: var(--primary);
+  }
+  #why-choose-682 .cs-text {
+    /* Override.  cs-topper cs-title and first cs-text should be removed and put into your global css sheet so it can control every instance of them on your site and is consistent. This selector is a section specific override that stays inside this stitch */
+    margin-bottom: 1rem;
+  }
+  #why-choose-682 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #why-choose-682 .cs-ul {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  #why-choose-682 .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #why-choose-682 .cs-h3 {
+    font-size: 2rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #why-choose-682 .cs-icon {
+    width: 1.0625rem;
+    height: auto;
+    margin-top: 0.25rem;
+  }
+  #why-choose-682 .cs-item-text {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: white;
+  }
+  #why-choose-682 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #why-choose-682 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width .3s;
+  }
+  #why-choose-682 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #why-choose-682 .cs-image-group {
+    /* everything inside the image group is in ems so the font size will scale them down.  Font size minimum is tied to view width size, and grows until it reaches 75% of the value on em */
+    font-size: min(2.3vw, .75em);
+    width: 39.5em;
+    height: 51.25em;
+    position: relative;
+    z-index: 1;
+    /* flips it horizontally */
+    transform: scaleX(-1);
+  }
+  #why-choose-682 .cs-picture {
+    width: 19.125em;
+    height: 22.5em;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+  }
+  #why-choose-682 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* so the images are the original orientation, undoing the flip the cs-image-group is doing */
+    transform: scaleX(-1);
+  }
+  #why-choose-682 .cs-picture1 {
+    top: 5em;
+    left: 0;
+  }
+  #why-choose-682 .cs-picture2 {
+    top: 0;
+    right: 0;
+  }
+  #why-choose-682 .cs-picture3 {
+    bottom: 0;
+    left: 0;
+  }
+  #why-choose-682 .cs-picture4 {
+    bottom: 5em;
+    right: 0;
+  }
+  #why-choose-682 .cs-graphic {
+    display: none;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #why-choose-682 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #why-choose-682 .cs-image-group {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+    top: 20%;
+  }
+  #why-choose-682 .cs-content.cs-topper img {
+    width: 200%;
+    height: auto;
+  }
+  #why-choose-682 .cs-graphic {
+    width: 61.4375em;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: 10.3125em;
+    right: -2em;
+    z-index: -1;
+  }
+  #why-choose-682 span {
+    max-width: 50rem;
+  }
+}
+
+                                
                                 
 
 
