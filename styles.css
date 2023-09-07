@@ -577,8 +577,6 @@ table {
     align-items: center;
     width: 19.5em;
     height: 19.5em;
-    border-radius: 50%;
-    background-color: #70707A;
     position: absolute;
     left: 8.125em;
     bottom: 3.8125em;
@@ -653,8 +651,6 @@ table {
     align-items: center;
     width: 19.5em;
     height: 19.5em;
-    border-radius: 50%;
-    background-color: #70707A;
     position: absolute;
     left: 8.125em;
     bottom: 3.8125em;
@@ -712,10 +708,68 @@ table {
   }
   #hoodie.cs-person {
     position: absolute;
-    height: 65%;
-    width: 65%;
-    right: 25%;
+    height: 30%;
+    width: 30%;
+    right: 20%;
     top: -10%;
+    animation-name: floatAnimation2;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #pants.cs-person {
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    right: 100%;
+    top: 25%;
+    animation-name: floatAnimation2;
+    animation-duration: 10s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #shorts.cs-person {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    right: 65%;
+    top: 50%;
+    animation-name: floatAnimation2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #sweatshirt.cs-person {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    right: 65%;
+    top: -10%;
+    animation-name: floatAnimation2;
+    animation-duration: 9s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #sweatshirt_back.cs-person {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    right: 20%;
+    top: 40%;
+    animation-name: floatAnimation2;
+    animation-duration: 7s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
   }
   #hero-358 .cs-person img {
     width: 150%;
@@ -727,8 +781,6 @@ table {
     align-items: center;
     width: 19.5em;
     height: 19.5em;
-    border-radius: 50%;
-    background-color: #70707A;
     position: absolute;
     left: 8.125em;
     bottom: 3.8125em;
@@ -818,10 +870,68 @@ table {
   }
   #hoodie.cs-person {
     position: absolute;
-    height: 65%;
-    width: 65%;
+    height: 30%;
+    width: 30%;
     right: 20%;
     top: -40%;
+    animation-name: floatAnimation2;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #pants.cs-person {
+    position: absolute;
+    height: 15%;
+    width: 15%;
+    right: 100%;
+    top: 0%;
+    animation-name: floatAnimation2;
+    animation-duration: 10s;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #shorts.cs-person {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    right: 65%;
+    top: 20%;
+    animation-name: floatAnimation2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #sweatshirt.cs-person {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    right: 65%;
+    top: -40%;
+    animation-name: floatAnimation2;
+    animation-duration: 9s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  #sweatshirt_back.cs-person {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    right: 20%;
+    top: 40%;
+    animation-name: floatAnimation2;
+    animation-duration: 7s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
   }
   #hero-358 .cs-icon-wrapper {
     display: flex;
@@ -829,8 +939,6 @@ table {
     align-items: center;
     width: 12.25em;
     height: 12.25em;
-    border-radius: 50%;
-    background-color: #70707A;
     position: absolute;
     left: 8.125em;
     bottom: 11.8125em;
@@ -843,7 +951,7 @@ table {
     animation-iteration-count: infinite;
   }
   #hero-358 .cs-icon {
-    width: 10em;
+    width: 30em;
     height: auto;
   }
   @keyframes fadeIn {
