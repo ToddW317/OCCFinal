@@ -1499,7 +1499,7 @@ table {
     list-style: none;
     /* 20px - 32px */
     padding: clamp(1.25rem, 2.3vw, 2rem);
-    background-color: #70707A;
+    background-color: #9999BD;
     border-radius: 1rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -1529,7 +1529,7 @@ table {
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
     margin: 0;
-    color: var(--bodyTextColor);
+    color: white;
     transition: color 0.3s;
   }
   #why-choose-892 .cs-floater {
