@@ -2245,8 +2245,60 @@ table {
                  
 
 /*-- -------------------------- -->
-<---           Stats            -->
+<---           Contact            -->
 <--- -------------------------- -*/
+
+/* Address and Phone Number Styling */
+#contact-info {
+  background-color: #9999BD; /* Matching background */
+  padding: var(--sectionPadding); /* Consistent padding */
+  color: #767676; /* Text color to match contact links */
+  font-family: 'Roboto', 'Arial', sans-serif; /* Consistency in font */
+}
+
+#contact-info .contact-info-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0 auto; /* Centering the list */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 1rem; /* Space between items */
+  max-width: 37.5rem; /* Max width to match the contact section */
+}
+
+#contact-info .contact-info-item {
+  display: flex;
+  flex-direction: column; /* Stack information vertically */
+  align-items: center; /* Center align the items */
+  text-align: center; /* Center the text */
+}
+
+#contact-info .contact-info-header {
+  font-size: 1.25rem; /* Slightly larger font for headers */
+  color: var(--headerColor); /* Use the variable for header color */
+  font-weight: 900; /* Bold headers */
+  margin-bottom: 0.5rem; /* Space between header and content */
+}
+
+#contact-info address,
+#contact-info a {
+  font-size: var(--bodyFontSize); /* Matching body font size */
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline from links */
+}
+
+#contact-info a:hover {
+  text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Adjustments for larger screens */
+@media only screen and (min-width: 40.625rem) {
+  #contact-info .contact-info-list {
+    flex-direction: row; /* Align items in a row on larger screens */
+    justify-content: center; /* Center items horizontally */
+    gap: 2.5rem; /* Increase gap between items */
+  }
+}
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
